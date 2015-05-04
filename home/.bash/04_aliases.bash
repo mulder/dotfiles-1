@@ -18,8 +18,8 @@ alias ...='cd ../..'
 alias cbranch="git rev-parse --abbrev-ref HEAD"
 
 git_origin_or_fork() {
-  if git remote 2>/dev/null | grep -iq sirupsen; then
-    echo "sirupsen"
+  if git remote 2>/dev/null | grep -iq mulder; then
+    echo "mulder"
   else
     echo "origin"
   fi
@@ -36,6 +36,7 @@ alias gp='git push `git_origin_or_fork` `cbranch`'
 alias gpl='git pull `git_origin_or_fork` `cbranch`'
 alias gc='git commit --verbose'
 alias gs='git status --short --branch'
+alias gst='git status'
 alias gb='git branch --verbose'
 alias grc='git rebase --continue'
 alias gl='git log --oneline'
@@ -50,6 +51,7 @@ alias gupdate='git fetch origin && git rebase origin/master && gpf'
 alias blush="git commit --amend --reuse-message HEAD"
 
 alias bx='bundle exec'
+alias be='bundle exec'
 alias rt='bx ruby -Itest'
 alias vs='vagrant ssh'
 
