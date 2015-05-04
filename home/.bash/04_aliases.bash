@@ -5,12 +5,12 @@ if command -v hub > /dev/null; then
   alias git=hub
 fi
 
-if ls --version | grep -q GNU; then
-  eval `dircolors ~/.dir_colors`
-  alias ls='ls --color=auto'
-else
+# if ls --version | grep -q GNU; then
+#   eval `dircolors ~/.dir_colors`
+#   alias ls='ls --color=auto'
+# else
   alias ls='ls -G'
-fi
+# fi
 
 alias ..='cd ..'
 alias ...='cd ../..'
