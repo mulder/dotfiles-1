@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+msg = "Don't Panic"
+puts `figlet "#{msg}\n"`
+
