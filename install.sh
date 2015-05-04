@@ -52,3 +52,10 @@ set -ex
 #   make clean
 #   make
 # )
+
+
+if ! type -t brew > /dev/null 2>&1; then
+  (
+    brew install git figlet ngrok
+  )
+fi
