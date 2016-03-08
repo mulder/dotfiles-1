@@ -7,7 +7,7 @@ set -o notify
 shopt -s nocaseglob
 
 # Vim as default editor
-export EDITOR=~/bin/subl
+export EDITOR=atom
 
 # Prefer user-installed one
 if [[ -x /usr/local/bin/vim ]]; then
